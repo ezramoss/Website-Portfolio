@@ -1,0 +1,149 @@
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #19a7ce;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 26s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 70%;
+    width: 106px;
+    height: 106px;
+    bottom: -106px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 28%;
+    width: 106px;
+    height: 106px;
+    bottom: -106px;
+    animation-delay: 4s;
+}
+.background li:nth-child(2) {
+    left: 10%;
+    width: 177px;
+    height: 177px;
+    bottom: -177px;
+    animation-delay: 9s;
+}
+.background li:nth-child(3) {
+    left: 44%;
+    width: 112px;
+    height: 112px;
+    bottom: -112px;
+    animation-delay: 5s;
+}
+.background li:nth-child(4) {
+    left: 55%;
+    width: 161px;
+    height: 161px;
+    bottom: -161px;
+    animation-delay: 14s;
+}
+.background li:nth-child(5) {
+    left: 27%;
+    width: 126px;
+    height: 126px;
+    bottom: -126px;
+    animation-delay: 15s;
+}
+.background li:nth-child(6) {
+    left: 48%;
+    width: 104px;
+    height: 104px;
+    bottom: -104px;
+    animation-delay: 15s;
+}
+.background li:nth-child(7) {
+    left: 35%;
+    width: 176px;
+    height: 176px;
+    bottom: -176px;
+    animation-delay: 17s;
+}
+.background li:nth-child(8) {
+    left: 73%;
+    width: 102px;
+    height: 102px;
+    bottom: -102px;
+    animation-delay: 27s;
+}
+.background li:nth-child(9) {
+    left: 81%;
+    width: 158px;
+    height: 158px;
+    bottom: -158px;
+    animation-delay: 36s;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.nav{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+}
+
+.card-container {
+    z-index: 1; /* set higher z-index value */
+  position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3%;
+    gap: 10px;
+  }
+
+.card{
+    background-color: #AFD3E2;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+  .img-uniersity{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
