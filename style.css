@@ -17,27 +17,21 @@ header{
 }
 
 @media only screen and (max-width: 880px) {
-    .title-heading{
-        display: none;
-    }
     .nav-links{
         position: relative;
         left: 0%;
     }
 }
 
-.title-heading{
-    float: left;
-    font-size: 50px;
-    color: black;
-}
-
 .nav-links{
-    float: right;
+    display: flex;
+    justify-content: center;
     position: relative;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    margin-right: 3%;
+    gap: 1rem;
 }
 
 body{
@@ -78,10 +72,16 @@ a{
     font-size: 30px;
 }
 
+.name {
+    color: red;
+}
+
 .intro-container {
+    width: 80%;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+    place-items: center;
     margin: 3%;
     gap: 75px;
 }
@@ -89,6 +89,7 @@ a{
 @media only screen and (max-width: 880px) {
     .intro-container {
         grid-template-columns: auto;
+        width: 100%;
     }
 }
 
@@ -106,7 +107,7 @@ a{
 
 .row-contact {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     gap: 10px;
     margin-bottom: 3%;
 }
@@ -143,6 +144,7 @@ a{
     height: 500px;
     border-radius: 50%;
     border: 1px solid black;
+    background-color: #AFD3E2;
 }
 
 .icon{
@@ -183,6 +185,10 @@ td{
     .table-link{
         font-size: 8px;
     }
+    .profile-pic{
+        width: 300px;
+        height: 300px;
+    }
 }
 
 
@@ -207,7 +213,7 @@ td{
     left: 0;
     margin: 0;
     padding: 0;
-    background: #19a7ce;
+    background: linear-gradient(to right top, #126982, #13728d, #147b98, #1484a4, #158daf, #1592b5, #1698bc, #169dc2, #179fc5, #18a2c8, #18a4cb, #19a7ce);
     overflow: hidden;
 }
 .background li {
