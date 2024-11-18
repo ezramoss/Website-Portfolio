@@ -9,39 +9,41 @@
 </head>
 <header>
     <div class="nav-links">
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
     </div>
 </header>
 <body>
     <section>
         <div class="intro-container">
             <div class="into-card">
-                <h1>Hello 👋</h1>
+                <h1 class="greeting">Hello 👋</h1>
                 <h3>I'm <strong class="name">Ezra Moss</strong>, a Software Engineer with a passion for technology and continuous learning.</h3>
                 <br>
-                <h2>Skill Set: </h2>
-                <div class="row-skill">
-                    <img class="icon" src="images/html.png">
-                    <img class="icon" src="images/css.png">
-                    <img class="icon" src="images/js.png">
-                    <img class="icon" src="images/python.png">
-                    <img class="icon" src="images/csharp.png">
-                    <img class="icon" src="images/cpp.png">
+                <div class="row-container">
+                    <div class="row-skill">
+                        <img class="icon" src="images/html.png">
+                        <img class="icon" src="images/css.png">
+                        <img class="icon" src="images/js.png">
+                        <img class="icon" src="images/python.png">
+                        <img class="icon" src="images/csharp.png">
+                        <img class="icon" src="images/cpp.png">
+                    </div>
                 </div>
                 <br>
-                <h2>Contact: </h2>
-                <div class="row-skill">
-                    <a href="https://www.linkedin.com/in/ezramoss/">
-                        <img class="icon" src="images/linkedin.png">
-                    </a>
-                    <a href="https://github.com/ezramoss">
-                        <img class="icon" src="images/github.png">
-                    </a>
-                    <a href="mailto:ezramoss4@gmail.com">
-                        <img class="icon" src="images/email.png">
-                    </a>
+                <div class="row-container">
+                    <div class="row-skill">
+                        <a href="https://www.linkedin.com/in/ezramoss/">
+                            <img class="icon" src="images/linkedin.png">
+                        </a>
+                        <a href="https://github.com/ezramoss">
+                            <img class="icon" src="images/github.png">
+                        </a>
+                        <a href="mailto:ezramoss4@gmail.com">
+                            <img class="icon" src="images/email.png">
+                        </a>
+                    </div>
                 </div>
             </div>
             <img class="profile-pic" src="images/face.png">
@@ -80,24 +82,31 @@
                 <h2>Web Developer</h2>
                 <h3>American Dog Society</h3>
                 <br>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget dolor quis enim feugiat convallis vel vitae nisl. 
-                    Maecenas eu lorem eget sapien efficitur semper in vitae tellus. Praesent vitae nisi eleifend purus ultricies accumsan. 
-                    Nunc ac ultricies ipsum, nec ullamcorper leo. Sed sodales viverra turpis ut consequat. Mauris congue varius tortor quis accumsan. 
-                    Maecenas nec nibh at massa porta ullamcorper. Vestibulum pretium ultricies dolor, rhoncus rutrum augue mattis eget. Praesent 
-                    tristique tortor vel pharetra tempus. 
-                    In posuere purus velit, in congue lacus tempor vel. Sed ac risus vitae elit volutpat rhoncus eu vitae tortor.
-                </p>
+                <div class="responsibilities-container">
+                    <ul>
+                        <li>Worked with a multidisciplinary team to help develop a learning management system geared toward providing information to new and existing dog parents</li>
+                        <li>Implemented core website features including account registration and management, payment integration with PayPal and Stripe, and course content pages</li>
+                        <li>Applications developed with HTML, CSS, JavaScript, PHP, and Bootstrap</li>
+                    </ul>
+                </div>
             </div>
             <div class="card">
                 <img class="img-uniersity" src="images/clu_its.png">
                 <h2>IT Technician</h2>
                 <h3>California Lutheran Univeristy</h3>
-                <p class="card-text"><strong>Responsibilities:</strong> Learned about relational and non-relational databases and worked with structured query language commands and MySQL for data selection and manipulation.</p>
+                <br>
+                <div class="responsibilities-container">
+                    <ul>
+                        <li>Serviced university and student computers by troubleshooting issues, updating system software, and installing new programs</li>
+                        <li>Imaged, prepared, and deployed hundreds of computers across campus</li>
+                        <li>Maintained an online help desk of university assets and user information</li>
+                        <li>Responded to student and staff technology questions and concerns</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <section id="experience">
+    <section id="projects">
         <h1>Projects</h1>
         <table>
             <tr>

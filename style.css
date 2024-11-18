@@ -14,6 +14,7 @@ header{
     height: 75px;
     width: 100%;
     margin-bottom: 100px;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.6);
 }
 
 @media only screen and (max-width: 880px) {
@@ -24,6 +25,7 @@ header{
 }
 
 .nav-links{
+    font-weight: bold;
     display: flex;
     justify-content: center;
     position: relative;
@@ -52,6 +54,8 @@ h1{
     color: black;
     padding-bottom: 2%;
     padding-top: 2%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 h2{
     padding-left: 10px;
@@ -68,8 +72,23 @@ p{
     font-size: 20px;
 }
 
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover{
+    color: #f9c94d;
+}
+
 a{
     font-size: 30px;
+    color: inherit;
+}
+
+.greeting{
+    padding-left: 10px;
 }
 
 .name {
@@ -86,10 +105,15 @@ a{
     gap: 75px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .intro-container {
+        grid-template-columns: auto;
+    }
+}
+
 @media only screen and (max-width: 880px) {
     .intro-container {
         grid-template-columns: auto;
-        width: 100%;
     }
 }
 
@@ -97,6 +121,11 @@ a{
     background-color: #AFD3E2;
     border: 2px solid;
     border-radius: 10px;
+}
+
+.row-container{
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .row-skills {
@@ -116,13 +145,14 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 3%;
-    gap: 10px;
+    gap: 50px;
 }
 
 .card{
     background-color: #AFD3E2;
     border: 2px solid;
     border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 @media only screen and (max-width: 880px) {
@@ -134,7 +164,8 @@ a{
 
 .img-uniersity{
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
     padding: 10px;
     border-radius: 20px;
 }
@@ -143,8 +174,9 @@ a{
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 3px solid black;
     background-color: #AFD3E2;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .icon{
@@ -153,21 +185,26 @@ a{
 }
 
 table{
+    background-color: #AFD3E2;
     width: 80%;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 10px;
     margin-bottom: 3%;
     margin-top: 3%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 th{
     text-align: left;
     border: 1px solid black;
+    border-radius: 10px;
     font-size: 30px;
     padding-left: 2%;
 }
 
 td{
     border: 1px solid black; 
+    border-radius: 10px;
     font-size: 20px;
     padding-left: 2%;
     padding-right: 2%;
@@ -203,6 +240,18 @@ td{
         opacity: 0;
         border-radius: 50%;
     }
+}
+
+.responsibilities-container{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+ul {
+    list-style-position: outside;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .background {
